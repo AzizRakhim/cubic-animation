@@ -2,3 +2,44 @@ body{
     background-color: #fff;
     min-height: 100vh;
 }
+
+.content{
+    width: 304px;
+    height: 304px;
+    border: 2px solid #000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    animation-name: my-animation;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+@keyframes my-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(300px, 0);
+    }
+
+    50% {
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        transform: translate(0, 300px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
